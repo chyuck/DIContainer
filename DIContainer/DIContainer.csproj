@@ -40,6 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\InjectAttribute.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="ContainerFactory.cs" />
+    <Compile Include="Entities\Implementation.cs" />
+    <Compile Include="Entities\Instance.cs" />
+    <Compile Include="Exceptions\ContainerException.cs" />
+    <Compile Include="Helpers\Checker.cs" />
+    <Compile Include="Helpers\ConstantHelper.cs" />
+    <Compile Include="Helpers\InjectAttributeHelper.cs" />
+    <Compile Include="Helpers\InstanceCreator.cs" />
+    <Compile Include="Helpers\PropertyInjector.cs" />
+    <Compile Include="IContainer.cs" />
+    <Compile Include="IReadOnlyContainer.cs" />
+    <Compile Include="Lifetime.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="..\Properties\SolutionInfo.cs">
       <Link>Properties\SolutionInfo.cs</Link>
