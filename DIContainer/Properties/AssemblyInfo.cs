@@ -5,4 +5,3 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyDescription("DI Container library assembly")]
 
 [assembly: InternalsVisibleTo("DIContainer.Tests")]
-[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]

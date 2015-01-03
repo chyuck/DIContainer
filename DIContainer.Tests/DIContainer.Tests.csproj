@@ -54,7 +54,28 @@
     <Compile Include="..\Properties\SolutionInfo.cs">
       <Link>Properties\SolutionInfo.cs</Link>
     </Compile>
+    <Compile Include="ContainerTests.cs" />
+    <Compile Include="Helpers\ExceptionAssert.cs" />
+    <Compile Include="InjectAttributeHelperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickStartTests.cs" />
+    <Compile Include="TestTypes\ContainerTestClass.cs" />
+    <Compile Include="TestTypes\ContainerTestClass2.cs" />
+    <Compile Include="TestTypes\ContainerTestClassWithAmbiguousConstructors.cs" />
+    <Compile Include="TestTypes\ContainerTestClassWithInjectedInstances.cs" />
+    <Compile Include="TestTypes\ContainerTestClassWithUnknownInstance.cs" />
+    <Compile Include="TestTypes\ContainerUnknownInstanceTestClass.cs" />
+    <Compile Include="TestTypes\IContainerTestInterface.cs" />
+    <Compile Include="TestTypes\IContainerTestInterface2.cs" />
+    <Compile Include="TestTypes\IContainerTestInterfaceWithInjectedInstances.cs" />
+    <Compile Include="TestTypes\IContainerTestInterfaceWithUnknownInstance.cs" />
+    <Compile Include="TestTypes\InjectAttributeHelperTestClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DIContainer\DIContainer.csproj">
+      <Project>{2fff03ae-d334-4586-9c8b-798a55338b99}</Project>
+      <Name>DIContainer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
